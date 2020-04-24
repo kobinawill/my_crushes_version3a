@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'functions.dart';
 
 List girlnames = ["Racheal Wilson","Efua Aidoo","Deborah Line Seka","Georgina Thompson","Eugenia Elikem Lawoe","Portia Esinam Attivo"];
 Map girlsDescription = {
@@ -40,6 +41,7 @@ void main(){
                         width: 40,
                         fit: BoxFit.fill,),
                   ),
+                  onTap: () => showGirlMessage(context, indexValue),
                 )
               ],
             );
